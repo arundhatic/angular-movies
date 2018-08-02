@@ -1,0 +1,28 @@
+<h2></h2>
+
+<div class="container table-1">
+  <div class="row">
+    <div class="col">
+     <table id="myTable" class="table table-hover table-space table-2">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Director</th>
+      <th scope="col">Release Date</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let movie of movies" class="movies">
+    <tr>
+       <td>
+          <a routerLink="/movie-detail/{{movie.id}}">{{movie.title}}</a>
+       </td>
+       <td>{{movie.director}}</td>
+       <td>{{movie.releaseDate}}</td>
+    </tr>
+  </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+<button class="add"><a class="add-a"  routerLink="/movie-add">add</a></button>

@@ -1,0 +1,33 @@
+<h2>Add Movie</h2>
+
+<div *ngIf="!flag">
+  <label>Title:
+    <input #movieTitle />
+  </label>
+  <label>Director:
+    <input #movieDirector/>
+  </label>
+  <label>Release Date:
+    <input #movieReleaseDate />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(movieTitle.value,movieDirector.value,movieReleaseDate.value);
+  movieTitle.value='';
+  movieDirector.value='';
+  movieReleaseDate.value='';
+  ">add</button>
+</div>
+
+<div *ngIf="flag">
+   <h3>movie successfully added</h3>
+</div>
+
+<div *ngIf="formError">
+   <h3>Error: all fields need to be filled</h3>
+</div>
+
+<div *ngIf="dateError">
+   <h3>Error: date format is incorrect</h3>
+</div>
+
+  <button class="goback"><a class="goback-a"  routerLink="/movies">go back</a></button>

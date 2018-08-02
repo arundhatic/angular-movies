@@ -1,0 +1,64 @@
+
+h2{
+  padding-top: 20px;
+  font-size: 20px;
+  color: #58595b;
+}
+
+label {
+  display: inline-block;
+  margin: .5em 0;
+  padding:10px;
+  color: #607D8B;
+  font-weight: bold;
+}
+
+input {
+  height: 2em;
+  width: 20em;
+  font-size: 14px;
+  padding-left: .4em;
+}
+
+.goback {
+   margin-top: 20px;
+    background-color: #58595b;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 24px;
+    cursor: pointer;
+    padding: 10px 24px;
+}
+
+.goback-a{
+  color: white;
+  text-decoration: none;
+}
+
+.save {
+   margin-top: 20px;
+   margin-left: 10px;
+    background-color: #58595b;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 24px;
+    cursor: pointer;
+    padding: 10px 24px;
+}
+
+button: hover {
+  background-color: #cfd8dc;
+}
+button: disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}

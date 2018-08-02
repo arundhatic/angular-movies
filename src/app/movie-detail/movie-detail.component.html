@@ -1,0 +1,30 @@
+
+
+  <div *ngIf="movie">
+  <h2>{{movie.title}}</h2>
+  <div><span>id: </span>{{movie.id}}</div>
+
+  <div>
+      <label>Title:
+        <input type="text" [(ngModel)]="movie.title" placeholder="title"/>
+      </label>
+     <label>Director:
+        <input type="text" [(ngModel)]="movie.director" placeholder="director"/>
+    </label>
+    <label>Release date:
+        <input  type="text" [(ngModel)]="movie.releaseDate" placeholder="releaseDate"/>
+    </label>
+
+  </div>
+
+  <div *ngIf="formError">
+     <h3>Error: all fields need to be filled</h3>
+  </div>
+
+  <div *ngIf="dateError">
+     <h3>Error: date format is incorrect</h3>
+  </div>
+
+  <button class="goback"><a class="goback-a"  routerLink="/movies">go back</a></button>
+  <button class="save" (click)="save()">save</button>
+</div>
